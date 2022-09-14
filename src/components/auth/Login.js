@@ -7,6 +7,7 @@ import AuthenticationService from '../../services/AuthenticationService';
 import NavBar from '../NavBar';
 import '../../assets/css/login.css';
 import Home from "../Home"
+import swal from 'sweetalert';
 
 class Login extends Component {
 
@@ -52,6 +53,9 @@ class Login extends Component {
         error => {
           console.log("Login fail: error = { " + error.toString() + " }");
           this.setState({error: "Can not signin successfully ! Please check nombreUsuario/password again"});
+          swal({title:"error en el login",
+           text: "nombre de Usuario/password incorrecto",
+            icon: "error",});
         }
     );
   }

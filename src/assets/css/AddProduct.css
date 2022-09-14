@@ -1,5 +1,10 @@
 
 
+.user2{
+    display: flex!important;
+    top: 2rem!important;
+
+}
 #advanced-search-form{
     background-color: #fff;
     max-width: 800px;
