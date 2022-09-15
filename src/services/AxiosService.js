@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const AxiosService = require('axios');
-
+try{
 axios.get('/servicio/lista')
 
   .then(function (response) {
@@ -13,5 +13,7 @@ axios.get('/servicio/lista')
   })
   .then(function () {
   });
-
+}
+catch(e){           
+  console.log(e)}
 export default new AxiosService ();
