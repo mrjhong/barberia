@@ -7,3 +7,12 @@
 .navbar{
     padding-left: 0%!important;
 }
+
+.ftco-navbar-light .navbar-toggler:focus {
+ 
+    color: rgba(0, 0, 0, 0) !important;
+}
+.ftco-navbar-light .navbar-toggler {
+ 
+    color: rgba(0, 0, 0, 0) !important;
+}
