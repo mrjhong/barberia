@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "../../assets/css/navbar5.css"
+import Modal from './Modal'
 export class Navbar extends Component {
     render() {
         return (
@@ -18,11 +19,13 @@ export class Navbar extends Component {
 
                                 </div>
                             </div>
-                            <div class="col-md-4 d-flex">
+                            <div class="col-md-4 d-flex cont-media">
                                 <div class="col-md-4 d-flex">
                                     <div class="social-media">
                                         <p class="mb-0 d-flex">
                                             <a href="/signin" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Twitter</i></span></a>
+                                                <button className='d-flex align-items-center justify-content-center buton-media' type="button" title='Registrate'  data-bs-toggle="modal" data-bs-target="#register"><span class="fa fa-key  media-auth"/></button>
+                                                 <Modal/>
                                             <a href="/signUp" class="d-flex align-items-center justify-content-center"><span class="fa fa-key"><i class="sr-only">Instagram</i></span></a>
                                         </p>
                                     </div>
@@ -41,7 +44,7 @@ export class Navbar extends Component {
                             <div  class="Collapse  navbar-collapse collapse">
                                 <ul class="navbar-nav  m-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="/">inicio</a></li>
+                                        <a class="nav-link" href="/"> inicio</a></li>
                                     <li class="nav-item dropdown"></li>
                                     <li class="nav-item"><a class="nav-link" href="/tecnologia">Tecnologia</a></li>
                                     <li class="nav-item"><a class="nav-link" href="/inmuebles">Inmuebles</a></li>
