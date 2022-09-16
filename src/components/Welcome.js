@@ -99,7 +99,8 @@ export default class Welcome extends Component {
 
     let n = 1;
     // login
-    if (user) {
+  //  if (user) {
+    if (1==1) {
       userInfo = (
 
 
@@ -225,12 +226,10 @@ export default class Welcome extends Component {
 
     return (
       <div>
-        <NavBar />
-
-        <div>
+       
 
           {userInfo}
-        </div>
+        
       </div>
     )
   }

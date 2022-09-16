@@ -21,69 +21,6 @@
   }
  
   
-  .mobile-screen{
-    position: relative;
-    margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
-    width: 300px;
-    height: 400px;
-    background: rgba(3,3,3,.7);
-    overflow: hidden;
-  }
-  
-  .header{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    background: rgba(3,3,3,.1);
-  }
-  
-  h1{
-    margin: 0;
-    padding: 10px 0;
-    text-align: center;
-    font-weight: 300;
-    font-size: 21px;
-    color: rgba(255,255,255,.5);
-  }
-  
-  .logo{
-    position: relative;
-    top: 30px;
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    background: url(https://s10.postimg.org/z6xqdowix/imageedit_1_8168502978.gif) no-repeat center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-  
-  form{
-    position: absolute;
-    bottom: 50px;
-    width: 100%;
-  }
-  
-  input,
-  .login-btn{
-    position: relative;
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    width: 84%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  }
-  
   .texto{
     border: none;
     border-left: 5px solid;
@@ -148,16 +85,7 @@
   
   
   
-  .option-text{
-    position: relative;
-    margin-left: 39%;
-    line-height: 30px;
-    color: #ccc;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 100;
-  }
-  
+
  
   
   /* Change colors container */

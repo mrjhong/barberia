@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import "../../assets/css/navbar5.css"
-import Modal from './Modal'
+import ModalLogin from './ModalLogin'
+import ModalRegister from './ModalRegister'
 export class Navbar extends Component {
     render() {
         return (
-            <div><nav class="navbar bg-light fixed-top">
+            <div><nav class="navbar bg-light ">
                 <div class="content-nav">
 
 
@@ -23,10 +24,12 @@ export class Navbar extends Component {
                                 <div class="col-md-4 d-flex">
                                     <div class="social-media">
                                         <p class="mb-0 d-flex">
-                                            <a href="/signin" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Twitter</i></span></a>
-                                                <button className='d-flex align-items-center justify-content-center buton-media' type="button" title='Registrate'  data-bs-toggle="modal" data-bs-target="#register"><span class="fa fa-key  media-auth"/></button>
-                                                 <Modal/>
-                                            <a href="/signUp" class="d-flex align-items-center justify-content-center"><span class="fa fa-key"><i class="sr-only">Instagram</i></span></a>
+                                           
+                                            
+                                                 <button className='d-flex align-items-center justify-content-center buton-media' type="button" title='Iniciar Sesion'  data-bs-toggle="modal" data-bs-target="#login"><span class="bi bi-person-fill  media-auth"/></button>
+                                                 <ModalLogin/>
+                                                 <button className='d-flex align-items-center justify-content-center buton-media' type="button" title='Registrate'  data-bs-toggle="modal" data-bs-target="#register"><span class="fa fa-key  media-auth"/></button>
+                                                 <ModalRegister/>
                                         </p>
                                     </div>
                                 </div>

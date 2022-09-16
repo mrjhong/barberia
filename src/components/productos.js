@@ -33,7 +33,7 @@ export default class Productos extends Component {
     this.filtrarElementos();
   }
 
-  filtrarElementos = () => {
+  /*/filtrarElementos = () => {
     var search = this.state.misProductos.filter(item => {
       if (item.nombre.toLocaleLowerCase().includes(this.state.busqueda.toLocaleLowerCase()) ||
         item.categoria.includes(this.state.busqueda.toLocaleLowerCase())) {
@@ -43,7 +43,7 @@ export default class Productos extends Component {
     this.setState({ productos: search });
   }
 
-
+*/
 
   render(
 

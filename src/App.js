@@ -11,6 +11,7 @@ import Inmuebles from './components/Inmuebles';
 import Otros from './components/Otros';
 import Perfil from './components/Perfil';
 import Ropa from './components/Ropa';
+import Navbar from './components/statics/Navbar';
 import Tecnologia from './components/Tecnologia';
 import Welcome from './components/Welcome';
 
@@ -19,7 +20,11 @@ class App extends Component {
   return (
 
     <Router>
+      <header className="App-header">
+        <Navbar/>
+      </header>
         <Switch>
+        
           <Route path='/' exact={true} component={Home}/>
           <Route path='/home' exact={true} component={Home}/>
           <Route path='/tecnologia' exact={true} component={Tecnologia}/>
