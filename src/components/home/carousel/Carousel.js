@@ -3,7 +3,7 @@ import "../../../assets/css/Carousel.css"
 const Carousel = () => {
   return (
     <div>
-            
+    {      
     <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
     <div className="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -57,7 +57,7 @@ const Carousel = () => {
 
 
 
- 
+  }
 
         </div>
   

@@ -1,6 +1,33 @@
 .modal-backdrop{
     position: inherit !important;
 }
+.formulario{
+    display: none;
+}
+
+.loading{
+  position: fixed;
+/*display: flex;
+justify-content: center;
+ */  
+ padding: 6rem;
+}
+@media (max-width: 600px) {
+    .loading{
+        padding: 5rem;
+    }
+}
+.modal-content{
+    min-height: 20rem;
+    border:0px;
+    box-shadow: 1px 4px 7px 2px #000000;
+}
+.img-thumbnail {
+    top: 5px;
+    position: relative;
+    width: 100vw;
+    max-height: 200px;
+  }
 .modal-register{
     position: relative;
 }
@@ -8,6 +35,7 @@
     width: 100%;
     border-radius: 20px;
 }
+.input-img{ border-radius: 4px !important;}
 .input-register:focus{
  border-color: brown;
  border-radius: 20px;

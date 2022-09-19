@@ -1,7 +1,9 @@
 .line-dark {
     width: 100vw;
 }
-
+.offcanvas-end{
+visibility: visible;
+}
 .content-nav {
     padding-top: 1%;
     width: 100vw;
@@ -31,6 +33,10 @@
 
 .navbar {
     padding-left: 0% !important;
+    padding-bottom:0% !important
+}
+.avatar{
+    border-radius:50%
 }
 
 .ftco-navbar-light .navbar-toggler:focus {

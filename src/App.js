@@ -5,7 +5,6 @@ import AddProduct from './components/AddProduct';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import Automotriz from './components/Automotriz';
-import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 import Inmuebles from './components/Inmuebles';
 import Otros from './components/Otros';
@@ -36,7 +35,6 @@ class App extends Component {
           <Route path='/welcome' exact={true} component={Welcome}/>
           <Route path='/addproduct' exact={true} component={AddProduct}/>
           <Route path='/signin' exact={true} component={Login}/>
-          <Route path='/dashboard' exact={true} component={Dashboard}/>
           <Route path='/signup' exact={true} component={Register}/>  
         </Switch>
       </Router>

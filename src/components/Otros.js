@@ -20,9 +20,7 @@ class Otros extends Component {
 
     return (
 <div>
-  <div >
-    <NavBar productos={ProductsCategory}/> 
-  </div>
+
   <Carousel/>
  
 

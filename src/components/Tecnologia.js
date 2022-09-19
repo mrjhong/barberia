@@ -25,9 +25,7 @@ class Tecnologia extends Component {
 <div>
 
 
-  <div >
-    <NavBar/> 
-  </div>
+ 
 
 <Carousel/>
 

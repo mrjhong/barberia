@@ -25,11 +25,12 @@ class Home extends Component {
     <Carousel/>
   </div>
 
-{/*
 
+{/*
   <div> 
     <Productos/>
   </div> 
+  
   */}
 </div>
     );

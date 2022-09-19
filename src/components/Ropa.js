@@ -22,9 +22,7 @@ class Ropa extends Component {
 
     return (
 <div>
-  <div >
-    <NavBar/> 
-  </div>
+ 
   <Carousel/>
   <div> 
     <ProductsCategory productos={"ropa"}/>

@@ -42,8 +42,8 @@ class Perfil extends Component {
 
     
     // login
-    if (user && user.token) {
-
+   // if (user && user.token) {
+    if (1===1) {
 
       if (perfil && perfil.foto) {
         let roles = "";
@@ -63,7 +63,7 @@ class Perfil extends Component {
                 <div className="imagen">
                   <img
                     className="conteImagen"
-                    src={"http://192.168.0.8/perfiles/" + perfil.foto}
+                    src={"http://localhost/perfiles/" + perfil.foto}
                     alt={perfil.nombre}
 
                   
@@ -130,7 +130,7 @@ class Perfil extends Component {
                  
                   
                 <div className="contenidoPortafolio">
-                    <MisProductos idPerfil={idRuta} />
+                   { /*<MisProductos idPerfil={idRuta} />*/}
                   </div>
                 <div className="portafolio">
                 
@@ -150,7 +150,7 @@ class Perfil extends Component {
 
 
       } else {
-        if(user.id==idRuta){
+        if(1==2){
         userInfo = <div style={{ marginTop: "20px" }}>
           <Alert variant="primary">
             <h2>Completa tu perfil</h2>
@@ -178,8 +178,6 @@ class Perfil extends Component {
     return (
 
       <div>
-        <NavBar />
-
         {userInfo}
       </div>
     );
