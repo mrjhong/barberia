@@ -32,19 +32,29 @@ export class ModalAdd extends Component {
         console.log(this.state.imagen);
 
     }
-    next = () => {
-        this.setState({ initial: !this.state.initial })
-     /*   $(function () {
-           
-
+    prev = () => {
+        this.setState({ initial: false })
+        
+        $(function () {
             setTimeout(function () {
                 $(".loading").fadeIn(0);
             }, 0);
+
             setTimeout(function () {
-                $(".formulario").fadeIn(8000);
+                $(".formulario").fadeIn(1500);
 
             }, 2000);
-        });*/
+
+            setTimeout(function () {
+                $(".loading").fadeOut(2500);
+            }, 1000);
+        
+        });
+
+    }
+    next = () => {
+        this.setState({ initial: !this.state.initial })
+  
         $(function () {
             setTimeout(function () {
                 $(".loading").fadeIn(0);
@@ -53,7 +63,7 @@ export class ModalAdd extends Component {
           
 
             setTimeout(function () {
-                $(".formulario-second")?.fadeIn(2000);
+                $(".formulario-second").fadeIn(2000);
 
             }, 1000);
 
@@ -127,7 +137,7 @@ export class ModalAdd extends Component {
                             <div class="modal-header">
 
                                 <h5 class="modal-title" id="staticBackdropLabel">Añadir Producto</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" onClick={this.prev} class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
 
                             <div class="modal-body">

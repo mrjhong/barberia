@@ -1,6 +1,40 @@
 .line-dark {
     width: 100vw;
 }
+.offcanvas-body {
+    background-color: #262828;
+    background-image: url(https://cdn.pixabay.com/photo/2020/06/22/14/35/nyc-5329396_960_720.jpg);
+    opacity: 0.7;
+  }
+  .offcanvas.show {
+    transform: none;
+  }
+  .offcanvas{
+  background-color: black;
+}
+.content-acces{
+    display: ruby;
+    margin-right: -1rem;
+}
+@media (max-width: 800px) {
+    .content-acces{
+        margin-right: 1.2rem;
+    }}
+   
+.out{
+    justify-content: center;
+    align-content: baseline;
+    display: grid;
+    margin-bottom: 1rem;
+  
+}
+@media (min-width: 800px) {
+    .out{
+        margin-right: -3.2rem;
+    }}
+.space-left{
+    padding-left: 1rem;
+}
 .offcanvas-end{
 visibility: visible;
 }
@@ -55,7 +89,27 @@ visibility: visible;
 
 
 
+.nav-item-collapse{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
 
+}
+.nav-item-collapse:hover{
+    background-color: #d00c0c82;
+    border-radius: 40px;
+}
+.nav-link-collapse{
+    color:white;
+    
+    text-decoration: none;
+}
+.nav-link-collapse:hover{
+    color:white;
+}
+.bi{
+    margin-right: 1rem;
+}
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover {
     color: #ff0000;
 }

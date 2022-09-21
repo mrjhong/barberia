@@ -56,29 +56,27 @@ export class Navbar extends Component {
 
                     <div class="container-fluid px-md-5">
                         <div class="row justify-content-between">
-                            <div class="col-md-8 order-md-last">
+                            <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-6 text-center">
                                         <a class="navbar-brand" href="/">FreeCommerce <span>COMPRA y PUBLICA</span></a>
                                     </div>
-                                    <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3" />
 
                                 </div>
                             </div>
-                            <div class="col-md-4 d-flex cont-media">
+                            <div class="col-md-4 d-flex cont-media order-md-first">
                                 <div class="col-md-4 d-flex">
                                     {
                                         this.state.login ? (
 
-                                            <div className="auth">
-                                                <button type="button" class="btn btn-outline-dark" onClick={this.signOut}>salir <icon className="fa fa-sign-out " /></button>
+                                            <div className="content-acces">
+                                                
+                                                
 
-                                                <a href="/profile" className="d-flex align-items-center justify-content-center"><span img src="https://bit.ly/3mvnYnL"><i className="sr-only">Instagram</i></span></a>
 
                                                 <a
-                                                    className="avatar"
+                                                    className="avatar space-left"
                                                     href={"/profile/" + this.state.id}
-
                                                 >
                                                     <img
                                                         className="avatar"
@@ -89,14 +87,14 @@ export class Navbar extends Component {
                                                     ></img>
                                                 </a>
 
-                                                <a className="d-flex align-items-center justify-content-center " color="black !important" href="/welcome" title="Editar Perfil">{this.state.user} <i className="bi bi-pen" /></a>
+                                               
                                                 <div className='social-media'>
                                                     <p className="mb-0 d-flex">
                                                         <button className='d-flex align-items-center justify-content-center buton-media' type="button" title='Agregar producto' data-bs-toggle="modal" data-bs-target="#addproduct"><span class="fa fa-plus media-auth" /></button>
                                                         <ModalAdd />
                                                     </p>
                                                 </div>
-
+                                                
 
                                             </div>
                                         ) : (
@@ -119,6 +117,16 @@ export class Navbar extends Component {
 
                                 </div>
                             </div>
+                            
+                            <div className='col order-last out'>
+                            {this.state.login?(
+                               
+                                  
+                            <button type="button" class="btn btn-outline-dark" onClick={this.signOut}>salir <icon className="fa fa-sign-out " /></button>
+                            
+                            ):""}   
+                            </div>  
+                                          
                         </div>
                     </div>
 
@@ -143,7 +151,7 @@ export class Navbar extends Component {
                             </div>
                         </div>
                     </nav>
-
+    {/*---------------------------sidebar-------------------*/}
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FreeCommerce</h5>
@@ -152,15 +160,14 @@ export class Navbar extends Component {
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <ul class="navbar-nav  m-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="/">inicio</a></li>
-                                    <li class="nav-item dropdown"></li>
-                                    <li class="nav-item"><a class="nav-link" href="/tecnologia">Tecnologia</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/inmuebles">Inmuebles</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/automotriz">Automotriz</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/ropa">Ropa</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/otros">Otros</a></li>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item-collapse active">
+                                        <a class="nav-link-collapse" href="/"><i class="bi bi-house-fill"/>  inicio</a></li>
+                                    <li class="nav-item-collapse"><a class="nav-link-collapse" href="/tecnologia"><i class="bi bi-motherboard-fill"/> Tecnologia</a></li>
+                                    <li class="nav-item-collapse"><a class="nav-link-collapse" href="/inmuebles"><i class="bi bi-bank"/> Inmuebles</a></li>
+                                    <li class="nav-item-collapse"><a class="nav-link-collapse" href="/automotriz"><i class="bi bi-car-front"/> Automotriz</a></li>
+                                    <li class="nav-item-collapse"><a class="nav-link-collapse" href="/ropa"> <i class="bi bi-bag-fill"/> Ropa</a></li>
+                                    <li class="nav-item-collapse"><a class="nav-link-collapse" href="/otros"><i class="bi bi-plus-circle-fill"/> Otros</a></li>
                                 </ul>
                             </ul>
 

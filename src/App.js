@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AddProduct from './components/AddProduct';
@@ -11,16 +11,20 @@ import Otros from './components/Otros';
 import Perfil from './components/Perfil';
 import Ropa from './components/Ropa';
 import Navbar from './components/statics/Navbar';
+import SidebarNav from './components/statics/SidebarNav';
 import Tecnologia from './components/Tecnologia';
 import Welcome from './components/Welcome';
 
 class App extends Component {
-  render(){
+
+  render(  ){
+  
   return (
 
     <Router>
       <header className="App-header">
-        <Navbar/>
+        <Navbar />
+       
       </header>
         <Switch>
         
