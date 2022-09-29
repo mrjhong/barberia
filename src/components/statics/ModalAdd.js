@@ -11,12 +11,21 @@ export class ModalAdd extends Component {
 
         this.state = {
             user: undefined,
-            initial: false
+            initial: false,
+            producto: "",
+            precio: "",
+            descripcion:"",
+            imagen:"",
+            disblebtn:true
         };
     }
 
 
     changeHandler = (event) => {
+        if (this.state.producto=!""){
+
+            this.setState({disblebtn:false})
+        }
 
         let nam = event.target.name;
         let val = event.target.value;
@@ -53,6 +62,8 @@ export class ModalAdd extends Component {
 
     }
     next = () => {
+     
+        
         this.setState({ initial: !this.state.initial })
   
         $(function () {
@@ -181,7 +192,7 @@ export class ModalAdd extends Component {
 
                                                 </div>
                                                 <div>
-                                                    <button onClick={this.next} class="btn btn-dark btn-rmodal">siguiente</button>
+                                                    <button onClick={this.next} class="btn btn-dark btn-rmodal " disabled={this.state.disblebtn} >{this.state.disblebtn}siguiente</button>
                                                 </div>
 
                                             </div>

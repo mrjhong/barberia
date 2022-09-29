@@ -15,7 +15,6 @@ class Otros extends Component {
   }
 
 
-
   render() {
 
     return (
