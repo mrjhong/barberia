@@ -103,7 +103,7 @@ export class Navbar extends Component {
                                                 <p class="mb-0 d-flex">
 
 
-                                                    <button className='d-flex align-items-center justify-content-center buton-media' type="button" title='Iniciar Sesion' data-bs-toggle="modal" data-bs-target="#login"><span class="bi bi-person-fill  media-auth" /></button>
+                                                    <button className='d-flex align-items-center justify-content-center buton-media' type="button" title='Iniciar Sesion' data-bs-toggle="modal" data-bs-target="#login"><span class="fa bi-person-fill  media-auth" /></button>
                                                     <ModalLogin />
                                                     <button className='d-flex align-items-center justify-content-center buton-media' type="button" title='Registrate' data-bs-toggle="modal" data-bs-target="#register"><span class="fa fa-key  media-auth" /></button>
                                                     <ModalRegister />

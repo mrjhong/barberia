@@ -14,17 +14,17 @@ export class ModalAdd extends Component {
             initial: false,
             producto: "",
             precio: "",
-            descripcion:"",
-            imagen:"",
-            disblebtn:true
+            descripcion: "",
+            imagen: "",
+            disblebtn: true
         };
     }
 
 
     changeHandler = (event) => {
-        if (this.state.producto=!""){
+        if (this.state.producto = !"") {
 
-            this.setState({disblebtn:false})
+            this.setState({ disblebtn: false })
         }
 
         let nam = event.target.name;
@@ -43,7 +43,7 @@ export class ModalAdd extends Component {
     }
     prev = () => {
         this.setState({ initial: false })
-        
+
         $(function () {
             setTimeout(function () {
                 $(".loading").fadeIn(0);
@@ -57,21 +57,21 @@ export class ModalAdd extends Component {
             setTimeout(function () {
                 $(".loading").fadeOut(2500);
             }, 1000);
-        
+
         });
 
     }
     next = () => {
-     
-        
+
+
         this.setState({ initial: !this.state.initial })
-  
+
         $(function () {
             setTimeout(function () {
                 $(".loading").fadeIn(0);
             }, 0);
 
-          
+
 
             setTimeout(function () {
                 $(".formulario-second").fadeIn(2000);
@@ -121,7 +121,7 @@ export class ModalAdd extends Component {
         this.setState({ user: user })
 
         $(function () {
-          
+
 
             setTimeout(function () {
                 $(".formulario").fadeIn(1500);
@@ -131,7 +131,7 @@ export class ModalAdd extends Component {
             setTimeout(function () {
                 $(".loading").fadeOut(2500);
             }, 1000);
-        
+
         });
 
 
@@ -199,33 +199,37 @@ export class ModalAdd extends Component {
 
                                             :
 
-                                            <div className='formulario-second' style={{display: "none"}}>
+                                            <div className='formulario-second' style={{ display: "none" }}>
 
-                                                <div class="mb-3">
-
-                                                    <label for="facebook" class="form-label">Foto de perfil</label>
+                                                <div className="mb-3">
+                                                    <label for="imagen">Imagen De Producto</label>
                                                     <input type="file"
-
-                                                        class="form-control input-register input-img"
-                                                        name="foto"
-                                                        id="foto"
+                                                        className="form-control"
+                                                        placeholder="imagen del producto"
+                                                        id="imagen"
+                                                        name="imagen"
                                                         onChange={this.changeHandlerImage}
                                                     />
-                                                    <img src={this.state.fileimg} alt="" class="img-thumbnail" />
+                                                </div>
+                                                <div className="form-group">
+                                                    <label for="categoria">Categoria</label>
+                                                    <select className="form-control"
+                                                        placeholder='selecciona una categoria'
+                                                        name="categoria"
+                                                        onChange={this.changeHandler}>
+
+                                                        <option value="">selecciona una categoria</option>
+                                                        <option value="tecnologia">tecnologia</option>
+                                                        <option value="automotriz">automotriz</option>
+                                                        <option value="ropa">ropa</option>
+                                                        <option value="inmuebles">inmuebles</option>
+                                                        <option value="otros">otros</option>
+
+
+                                                    </select>
                                                 </div>
 
-                                                <div class="mb-3">
-
-                                                    <label for="facebook" class="form-label">Perfil de facebook</label>
-                                                    <input type="text"
-
-                                                        class="form-control input-register"
-                                                        placeholder="www.facebok.com (opcional)"
-                                                        name="facebook"
-                                                        id="facebook"
-                                                        onChange={this.changeHandler}
-                                                    />
-                                                </div>
+                                             
 
                                                 <div class="mb-3">
 
